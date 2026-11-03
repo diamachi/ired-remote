@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IRed Remote</string>
+    <string name="lg_tv">LG TV</string>
+    <string name="google_tv">Google TV</string>
+    <string name="panasonic_ac">Panasonic AC</string>
+    <string name="cherry_lights">Cherry Lights</string>
+</resources>

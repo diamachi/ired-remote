@@ -1,0 +1,22 @@
+# Local Android SDK, Gradle state, and build outputs
+local.properties
+.gradle/
+**/build/
+bin/
+
+# Machine and editor files
+.DS_Store
+.idea/
+*.iml
+
+# Local signing material and generated packages
+*.jks
+*.keystore
+*.apk
+*.aab
+
+# Personal IR profile, contains device-specific codes/configuration
+/room_hub.irplus
+
+# Bundled local Gradle installation is not used by the wrapper
+/tools/gradle/
