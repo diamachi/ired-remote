@@ -25,7 +25,6 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
             window.isNavigationBarContrastEnforced = false
-            window.navigationBarColor = android.graphics.Color.TRANSPARENT
         }
 
         setContent {
