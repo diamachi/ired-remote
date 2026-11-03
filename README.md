@@ -6,21 +6,9 @@ An Android remote-control app for IR appliances and Google TV devices. It is bui
 
 ## Screenshots
 
-### LG webOS TV
-
-![LG webOS TV remote](docs/screenshots/lg-webos.jpg)
-
-### Google TV Streamer
-
-![Google TV Streamer remote](docs/screenshots/google-tv-streamer.jpg)
-
-### Panasonic AC
-
-![Panasonic AC remote](docs/screenshots/panasonic-ac.jpg)
-
-### Cherry Lights
-
-![Cherry Lights remote](docs/screenshots/cherry-lights.jpg)
+| LG webOS TV | Google TV Streamer | Panasonic AC | Cherry Lights |
+|:---:|:---:|:---:|:---:|
+| <img src="docs/screenshots/lg-webos.jpg" width="150" alt="LG webOS TV remote"> | <img src="docs/screenshots/google-tv-streamer.jpg" width="150" alt="Google TV Streamer remote"> | <img src="docs/screenshots/panasonic-ac.jpg" width="150" alt="Panasonic AC remote"> | <img src="docs/screenshots/cherry-lights.jpg" width="150" alt="Cherry Lights remote"> |
 
 ## Features
 
