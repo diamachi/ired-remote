@@ -6,16 +6,28 @@ An Android remote-control app for IR appliances and Google TV devices. It is bui
 
 ## Screenshots
 
-Screenshots belong in [`docs/screenshots`](docs/screenshots/). The current workspace has no connected Android device or emulator, so I could not capture accurate screenshots for every screen. See the capture checklist in that folder and add real captures from the running app before publishing the gallery; do not use mockups as product screenshots.
+### LG webOS TV
 
-Planned gallery: LG webOS TV · Google TV Streamer · Panasonic AC · Cherry lights · Custom remote · Add remote / pairing.
+![LG webOS TV remote](docs/screenshots/lg-webos.jpg)
+
+### Google TV Streamer
+
+![Google TV Streamer remote](docs/screenshots/google-tv-streamer.jpg)
+
+### Panasonic AC
+
+![Panasonic AC remote](docs/screenshots/panasonic-ac.jpg)
+
+### Cherry Lights
+
+![Cherry Lights remote](docs/screenshots/cherry-lights.jpg)
 
 ## Features
 
 | Remote | Controls |
 | --- | --- |
 | LG webOS TV (IR) | Power, input, info, home, settings, Q.Menu, D-pad, back/exit, volume, mute, channel and media controls. |
-| Google TV Streamer (Wi-Fi) | Discover on the local network or enter an IP, pair with the PIN on the TV, reconnect, cancel pairing, manage separate named Streamer profiles, and control with the D-pad or touchpad. Includes back, home, search key, playback and volume controls. The phone does not stream microphone audio. |
+| Google TV Streamer (Wi-Fi) | Discover on the local network or enter an IP, pair with the PIN on the TV, reconnect automatically using the saved pairing, cancel pairing, manage separate named Streamer profiles, and control with the D-pad or touchpad. Includes back, home, search key, playback and volume controls. The phone does not stream microphone audio. |
 | Panasonic AC (IR) | Power, temperature, mode, fan and swing controls, plus custom buttons. IR sends are one-way; the app cannot confirm the AC received a command. |
 | Cherry lights (IR) | Power, timer, lighting modes and dimming. |
 | Custom IR remote | Add NEC buttons with a label and 32-bit code. |
@@ -29,6 +41,10 @@ The Google TV volume option can send volume commands through the LG TV's IR cont
 3. For IR remotes, point the phone's IR emitter at the device. For Google TV, keep the phone and Streamer on the same Wi-Fi network and approve the pairing PIN shown on the TV.
 
 The minimum Android version is 8.0 (API 26). Network discovery can fail when the router isolates Wi-Fi clients or the device is on a guest network; entering the Streamer's IP is an alternative.
+
+### Google TV pairing and reconnecting
+
+Pair each Streamer once by approving its on-screen PIN. iRed saves the device address and pairing status, and keeps its client key in Android Keystore. When you reopen that remote, it reconnects automatically; it does not ask you to pair again. The phone and Streamer must be on the same reachable Wi-Fi network. If the Streamer's IP address changes or it is asleep when iRed tries to connect, use **Scan Wi-Fi** or **Change IP** and reconnect. **Disconnect** closes the current session; **Unpair Device** removes the saved pairing.
 
 ## Build from source
 
